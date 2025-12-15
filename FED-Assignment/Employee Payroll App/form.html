@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add / Edit Employee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Add / Edit Employee Payroll</h1>
+  </header>
+
+  <div class="form-container">
+    <h2 id="formTitle">Employee Payroll Form</h2>
+
+    <form id="payrollForm">
+      <!-- we keep id hidden for editing -->
+      <input type="hidden" id="empId" value="">
+
+      <label>Name</label>
+      <input type="text" id="name" required>
+
+      <label>Gender</label>
+      <div class="inline">
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+      </div>
+
+      <label>Department</label>
+      <div class="inline">
+        <input type="checkbox" value="HR"> HR
+        <input type="checkbox" value="Sales"> Sales
+        <input type="checkbox" value="Finance"> Finance
+        <input type="checkbox" value="Engineer"> Engineer
+      </div>
+
+      <label>Salary</label>
+      <select id="salary">
+        <option value="10000">₹ 10,000</option>
+        <option value="20000">₹ 20,000</option>
+        <option value="30000">₹ 30,000</option>
+      </select>
+
+      <label>Start Date</label>
+      <input type="date" id="startDate" required>
+
+      <div class="form-buttons">
+        <button type="button" onclick="cancelAndBack()">Cancel</button>
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

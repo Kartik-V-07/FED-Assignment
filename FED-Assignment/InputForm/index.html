@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Form Input Fields</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML 5 Form Input Fields</h1>
+
+        <label>text input type for Name:</label>
+        <input type="text" id="name" oninput="validateName()" placeholder="Enter name" />
+        <span id="name-error" class="error"></span>
+
+        <label>password input type:</label>
+        <input type="password" placeholder="Enter password" />
+
+        <label>email input type:</label>
+        <input type="email" placeholder="hello@bridgelabz.com" />
+
+        <label>url input type:</label>
+        <input type="url" placeholder="url" />
+
+        <label>number input type:</label>
+        <input type="number" placeholder="325235325" />
+
+        <label>tel input type:</label>
+        <input type="tel" placeholder="phone number" />
+
+        <label>search input type:</label>
+        <input type="search" placeholder="Employability" />
+
+        <label>Choose a date and time:</label>
+        <input type="datetime-local" />
+
+        <label>Choose your salary:</label>
+        <input type="range" id="salary" min="0" max="400000" value="200000" oninput="updateSalary()" />
+        <span id="salary-value">200000</span>
+
+        <button>Submit</button>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

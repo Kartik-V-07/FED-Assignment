@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Employee Payroll UI/UX Design</h1>
+    </header>
+
+    <div class="top-bar">
+        <h2>Employee Details</h2>
+        <button class="add-btn" onclick="window.location.href='form.html'">+ Add User</button>
+    </div>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th> <!-- new -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data inserted by JS -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
